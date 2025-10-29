@@ -17,4 +17,12 @@ struct Persona {
 	string ciudad;
 	Direccion dir;
 };
+
+namespace Basico {
+	struct Persona {
+	    string nombre;
+	    int edad;
+	    string ciudad;
+	};
+}
 #endif

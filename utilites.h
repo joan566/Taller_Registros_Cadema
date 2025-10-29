@@ -22,4 +22,11 @@ int obtenerNumero(string text) {
 	return num;
 }
 
+string toLower(string texto) {
+    for (char &c : texto) {
+    	c = tolower(c);
+	}
+    return texto;
+}
+
 #endif
