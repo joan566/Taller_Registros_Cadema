@@ -4,22 +4,22 @@
 #include<iostream>
 #include<cctype>
 #include<vector>
-#include "taller_ejecicio_15.h"
+#include "taller_ejercicio_15.h"
 
 using namespace std;
 
-void numeroCaracteres() {
-	
-	vector<Persona> personas = obtenerPersonas();
+void numeroCaracteresPersona(vector<Persona> &personas) {
 
+	cout << "\n---------------------------------------------------------------";
 	for(Persona p : personas) {
 		int count = 0;
-		for(char letter : p.name) {
+		for(char letter : p.nombre) {
 			if(isalpha(letter)) 
 				count++;
 		}
-		cout << "El numero de caracteres de [" << p.name << "] = " << count;
+		cout << "\nEl numero de caracteres de [" << p.nombre << "] = " << count;
 	}
+	cout << "\n---------------------------------------------------------------";
 }
 
 #endif

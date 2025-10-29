@@ -10,7 +10,7 @@
 
 using namespace std;
 
-string Minus(string texto) {
+string toLower(string texto) {
     for (char &c : texto) {
     	c = tolower(c);
 	}
@@ -60,7 +60,7 @@ void Buscar_por_nombre(vector<Persona> &personas){
 	
 	cout<<"\n ======Buscados======="<<endl;
     for(Persona &p : personas){
-    	if(Minus(p.nombre) == Minus(buscar)){
+    	if(toLower(p.nombre) == toLower(buscar)){
     		encontrado = true;
     		cout <<"\n |Nombre: {"<<p.nombre<<"} | Edad: {"<<p.edad<<"} | Direccion : {"<<p.ciudad<<","<<p.dir.barrio<<","<<p.dir.calle<<"} |"<<endl;
 		}
