@@ -2,7 +2,7 @@
 #include<iomanip>
 #include "utilites.h"
 #include "taller_ejercicio_2.h"
-#include "taller_ejercicio_8.h"
+
 
 
 int main() {
@@ -11,6 +11,7 @@ int main() {
 
 		std::cout << "\n------------------------- MENU PRINCIPAL -------------------------\n";
 		
+		// Imprimir el menu de los 15 ejercicios
 		for(int i = 0; i < 15; i++) {
 			std::cout << setw(2) << right << i + 1 << ".- " << "Ejercicio #" << i + 1 << endl; 
 		}
@@ -21,6 +22,7 @@ int main() {
 		std::cout << "------------------------------------------------------------------";
 		std::cout << endl;
 		
+		// Ejecuta la opcion ingresada
 		switch(opcion) {
 			case 1:
 				std::cout << "Pendiente"; break;
@@ -38,7 +40,7 @@ int main() {
 			case 7:
 				std::cout << "Pendiente"; break;
 			case 8:
-				numeroCaracteres(); break;
+				cout << ""; break;
 			case 9:
 				std::cout << "Pendiente"; break;
 			case 10:

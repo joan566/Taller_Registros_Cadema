@@ -17,3 +17,5 @@ struct Persona {
 	string ciudad;
 	Direccion dir;
 };
+
+#endif
