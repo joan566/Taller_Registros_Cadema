@@ -14,6 +14,11 @@ bool comparador_de_nombres(const Persona &a, const Persona &b){
 }
 
 void alfabeticamente(vector<Persona> personas) {
+	if(personas.empty()) {
+		cout << "No hay personas registras aun.";
+		return;
+	}
+	
     cout << "\n======= Lista de nombres (normal) =======\n";
     for (Persona &p : personas) {
         cout << "\nNombre: " << p.nombre;

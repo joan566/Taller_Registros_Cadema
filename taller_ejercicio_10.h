@@ -15,12 +15,16 @@ void personasPorCiudad(vector<Persona> &personas) {
 	
 	string ciudad = obtenerCadena("una ciudad");
 	
-	cout << "Las personas que viven en " << ciudad << " son: \n";
+	cout << "Las personas que viven en " << ciudad << " son: ";
+	bool hay = false;
 	for(Persona persona : personas) {
-		if(toLower(persona.ciudad) == toLower(ciudad))
+		if(toLower(persona.ciudad) == toLower(ciudad)) {
+			hay = true;
 			cout <<"\n {Nombre: " << persona.nombre << ", Edad: " << persona.edad << ", Direccion: [" << persona.ciudad << ", " << persona.dir.barrio << ", "  << persona.dir.calle << "] }"<<endl;	
+		}
 	}
 	
+	if(!hay) { cout << "0"; }
 	cout  << "\n------------------------------------------------------------------------------------------------------------------------";
 }
 

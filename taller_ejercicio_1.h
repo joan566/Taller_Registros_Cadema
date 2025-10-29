@@ -15,7 +15,7 @@ void numeroCaracteres() {
 	cout << "\n---------------------------------------------------------------";
 	int count = 0;
 	for(char letter : frase) {
-		if(isalpha(letter)) 
+		if(letter != ' ') 
 			count++;
 	}
 	cout << "\nEl numero de caracteres de [" << frase << "] = " << count;

@@ -9,6 +9,10 @@
 using namespace std;
 
 void numeroCaracteresPersona(vector<Persona> &personas) {
+	if(personas.empty()) {
+		cout << "No hay personas registras aun.";
+		return;
+	}
 
 	cout << "\n---------------------------------------------------------------";
 	for(Persona p : personas) {
