@@ -11,7 +11,7 @@ void encontrarPalabraEnFrase() {
 	string frase = obtenerCadena("una frase");
 	string palabra = obtenerCadena("una palabra para ver si se encuentra en la frase");
 	
-	if (frase.find(palabra) != string::npos) {
+	if (toLower(frase).find(toLower(palabra)) != string::npos) {
     	cout << "La palabra se encontro";
 	} else {
     	cout << "La palabra no esta";
