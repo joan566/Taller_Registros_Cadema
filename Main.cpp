@@ -2,11 +2,13 @@
 #include<iomanip>
 #include "utilites.h"
 #include "taller_ejercicio_2.h"
-#include "taller_ejercicio_8.h"
+#include "taller_ejercicio_4.h"
+#include "taller_ejercicio_15.h"
 
 
 int main() {
 	int opcion = 0;
+	vector<Persona> personas;
 	do {
 
 		std::cout << "\n------------------------- MENU PRINCIPAL -------------------------\n";
@@ -30,7 +32,7 @@ int main() {
 			case 3:
 				std::cout << "Pendiente"; break;
 			case 4:
-				std::cout << "Pendiente"; break;
+				mayuscula_minuscula(); break;
 			case 5:
 				std::cout << "Pendiente"; break;
 			case 6:
@@ -38,7 +40,7 @@ int main() {
 			case 7:
 				std::cout << "Pendiente"; break;
 			case 8:
-				numeroCaracteres(); break;
+				cout; break;
 			case 9:
 				std::cout << "Pendiente"; break;
 			case 10:
@@ -50,9 +52,9 @@ int main() {
 			case 13:
 				std::cout << "Pendiente"; break;
 			case 14:
-				std::cout << "Pendiente"; break;
+				registrar_persona(personas); break;
 			case 15:
-				std::cout << "Pendiente"; break;
+				menu_Persona(personas); break;
 			case 16:
 				std::cout << "Saliendo del programa..."; break;
 				
@@ -60,7 +62,7 @@ int main() {
 				std::cout << "Opcion no valida, intente con nuevamente." << endl; break;
 		}
 		
-	} while(opcion < 1 || opcion > 15);
+	} while(opcion != 16);
 	
 	return 0;
 }
