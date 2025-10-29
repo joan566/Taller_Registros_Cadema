@@ -1,11 +1,16 @@
 #include<iostream>
 #include<iomanip>
+#include<vector>
+
+#include "models.h"
 #include "utilites.h"
 #include "taller_ejercicio_2.h"
+#include "taller_ejercicio_15.h"
 
 
 
 int main() {
+	vector<Persona> personas;
 	int opcion = 0;
 	do {
 
@@ -52,9 +57,9 @@ int main() {
 			case 13:
 				std::cout << "Pendiente"; break;
 			case 14:
-				std::cout << "Pendiente"; break;
+				registrar_persona(personas); break;
 			case 15:
-				std::cout << "Pendiente"; break;
+				menu_Persona(personas); break;
 			case 16:
 				std::cout << "Saliendo del programa..."; break;
 				
@@ -62,7 +67,7 @@ int main() {
 				std::cout << "Opcion no valida, intente con nuevamente." << endl; break;
 		}
 		
-	} while(opcion < 1 || opcion > 15);
+	} while(opcion != 16);
 	
 	return 0;
 }
